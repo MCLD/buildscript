@@ -1,0 +1,13 @@
+# Run Docker build script
+
+pool:
+  vmImage: "ubuntu-latest"
+
+steps:
+  - script: /bin/bash build.bash
+    displayName: "Run build.bash"
+    env:
+      BLD_DOCKER_IMAGE: $(BLD_DOCKER_IMAGE)
+      CR_HOST: $(CR_HOST)
+      CR_PASSWORD: $(CR_PASSWORD)
+      CR_USER: $(CR_USER)
