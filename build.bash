@@ -244,7 +244,7 @@ if [[ $BLD_PUSH = true ]]; then
     msg "${BLUE}===${NOFORMAT} Pushing image to ghcr.io/${ghcrowner}/${BLD_DOCKER_IMAGE}"
     docker tag "${BLD_FULL_DOCKER_IMAGE}" "ghcr.io/${ghcrowner}/${BLD_DOCKER_IMAGE}"
     echo "$GHCR_PAT" | \
-    docker login ghcr.io -u "$dockeruser" --password-stdin || exit $?
+    docker login ghcr.io -u "${ghcruser}" --password-stdin || exit $?
     docker push "ghcr.io/${ghcrowner}/${BLD_DOCKER_IMAGE}"
 
     if [[ $BLD_RELEASE = "true" ]]; then
