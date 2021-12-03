@@ -4,7 +4,7 @@ The `build.bash` script helps build Docker images and upload them to container r
 
 - Run the exact same build process locally as runs in the CI environment and produces production Docker images.
 - No script modifications necessary, configure for different systems with environment variables.
-- Builds for `develop` and `main` branches produce containers tagged with the branch name and pushed to container registries.
+- Builds for `develop`, `main`, and `test` branches produce containers tagged with the branch name and pushed to container registries.
 - Branches named in the format `release/x.y.z` are pushed to container registries with that container tag as well as the container tag `latest`.
 - Other branches go through the `build` stage in the `Dockerfile` but not further (and no image is uploaded).
 - Build environment information is brought in as container labels (Git commit id, build date, version) and you can easily add more.
