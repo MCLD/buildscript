@@ -1,5 +1,5 @@
 # prepare base image
-FROM mcr.microsoft.com/dotnet/runtime:5.0-buster-slim AS base
+FROM mcr.microsoft.com/dotnet/runtime:5.0-buster-slim@sha256:cac99641916f8a6c4712951801dd17459382b8cb2b41bcd1e8d7a787f8cb6a51 AS base
 WORKDIR /app
 
 # get build image
