@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/runtime:5.0-buster-slim@sha256:cac99641916f8a6c471
 WORKDIR /app
 
 # get build image
-FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
+FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim@sha256:138704321c4ba9edfcdb738020ca50eb917af221a52558a2ff46b4789f6ddd54 AS build
 WORKDIR /src
 
 # run dotnet restore
