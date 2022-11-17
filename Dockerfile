@@ -1,9 +1,9 @@
 # prepare base image
-FROM mcr.microsoft.com/dotnet/runtime:7.0 AS base
+FROM mcr.microsoft.com/dotnet/runtime:7.0@sha256:bc86158b6c02a0983e3377be0a71b17982ca5ccb00840b0c44abc4184f6326a7 AS base
 WORKDIR /app
 
 # get build image
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:7.0@sha256:a320a69c64e425e7eb42f8841d034fc3a4bb7a925ebb834c13680925c85e282c AS build
 WORKDIR /src
 
 # run dotnet restore
