@@ -1,5 +1,5 @@
 # prepare base image
-FROM mcr.microsoft.com/dotnet/runtime:7.0 AS base
+FROM mcr.microsoft.com/dotnet/runtime:7.0@sha256:bc86158b6c02a0983e3377be0a71b17982ca5ccb00840b0c44abc4184f6326a7 AS base
 WORKDIR /app
 
 # get build image
