@@ -9,6 +9,7 @@ The `build.bash` script helps build Docker images and upload them to container r
 - Other branches go through the `build` stage in the `Dockerfile` but not further (and no image is uploaded).
 - Build environment information is brought in as container labels (Git commit id, build date, version) and you can easily add more.
 - Can push to a configured container registry (Docker Hub by default) as well as the GitHub Container registry.
+- Can utilize [docker-lock](https://github.com/safe-waters/docker-lock) to handle pinning of images in each `Dockerfile`
 
 **You only need `build.bash`, the rest of this project is testing and examples.**
 
@@ -33,6 +34,7 @@ Environment variables (all are optional):
 - `CR_OWNER` - owner of the container registry
 - `CR_PASSWORD` - password to log into the container registry
 - `CR_USER` - username to log in to the container registry
+- `DOCKER_LOCK_VERSION` - a version of docker-lock to use (e.g. 0.8.10), can also be specified in `docker-lock-version.txt`
 - `GHCR_OWNER` - owner of the GitHub Container Registry (defaults to `GHCR_USER`)
 - `GHCR_PAT` - GitHub Container Registry Personal Access Token
 - `GHCR_USER` - username to log in to the GitHub Container Registry
@@ -64,6 +66,7 @@ See [this sample Dockerfile](https://github.com/mcld/buildscript/blob/main/Docke
   - `CR_OWNER` - container registry repository (username or organization).
   - `CR_PASSWORD` - container registration password or Personal Access Token.
   - `CR_USER` - container registry username for authentication.
+  - `DOCKER_LOCK_VERSION` - a version of docker-lock to use (e.g. 0.8.10), can also be specified in `docker-lock-version.txt`
   - `GHCR_OWNER` - GitHub Container Registry repository (username or organization name).
   - `GHCR_PAT` - GitHub Personal Access Token.
   - `GHCR_USER` - username associated with the GitHub Personal Access Token (for authentication).
