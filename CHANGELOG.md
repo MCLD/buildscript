@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2022-12-13
+
+### Added
+
+- Ability to use docker-lock for Dockerfile pinning
+
 ## [1.1.0] - 2021-12-02
 
 ### Added
@@ -30,7 +36,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `azure-pipelines-yml` to show how to call the script from Azure
 - GitHub workflow `build.yml` to show how to call the script as a GitHub Action
 
-[unreleased]: https://github.com/mcld/buildscript/compare/v1.1.0...HEAD
+[unreleased]: https://github.com/mcld/buildscript/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/mcld/buildscript/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/mcld/buildscript/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/mcld/buildscript/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/mcld/buildscript/releases/tag/v1.0.0
