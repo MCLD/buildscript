@@ -38,7 +38,7 @@ Environment variables:
 - GHCR_PAT - optional - GitHub Container Registry Personal Access Token
 - GHCR_USER - optional - username to log in to the GitHub Container Registry
 
-Version 1.2.0 released 2022-12-13
+Version 1.3.0 released 2023-06-21
 EOF
     exit
 }
