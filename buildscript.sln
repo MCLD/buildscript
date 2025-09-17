@@ -7,9 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "buildscript", "buildscript\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3B34BF48-149D-4C8F-B110-575B5194A4AD}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		azure-pipelines.yml = azure-pipelines.yml
 		build.bash = build.bash
-		.github\workflows\build.yml = .github\workflows\build.yml
+		.github\workflows\ci.yml = .github\workflows\ci.yml
 		Dockerfile = Dockerfile
 		README.md = README.md
 		release-prep.bash = release-prep.bash
