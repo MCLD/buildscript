@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.1] - 2025-09-17
+
+- Update Docker sample build to use ASP.NET 8.0
+- Add missing CR_HOST to GitHub build workflow
+- Add note to README about using Gitea
+
 ## [1.3.0] - 2023-06-21
 
 ### Changed

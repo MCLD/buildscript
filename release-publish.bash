@@ -81,7 +81,7 @@ zip -q -r9 "buildscript-${BLD_RELEASE_VERSION-}.zip" "${BLD_PUBLISH_DIRECTORY-}"
 
 du -sch "${BLD_PUBLISH_DIRECTORY-}"/ "buildscript-${BLD_RELEASE_VERSION-}.zip"
 
-if [[ -n $BLD_RELEASE_TOKEN ]]; then
+if [[ -n "${BLD_RELEASE_TOKEN-}" ]]; then
   curl -L -O https://github.com/tfausak/github-release/releases/latest/download/github-release-linux.gz
   gunzip github-release-linux.gz && chmod 700 github-release-linux && \
   ./github-release-linux upload \

@@ -45,9 +45,10 @@ Environment variables (all are optional):
 
 1. Get credentials for pushing containers into your desired registry or registries.
 
-- GitHub [Personal Access Token for the GitHub Container Registry](https://docs.github.com/en/free-pro-team@latest/packages/guides/pushing-and-pulling-docker-images#authenticating-to-github-container-registry).
-- Docker Hub [Personal Access Token](https://docs.docker.com/docker-hub/access-tokens/).
 - Azure container registry [credentials](https://azure.microsoft.com/en-us/services/container-registry/).
+- Docker Hub [Personal Access Token](https://docs.docker.com/docker-hub/access-tokens/).
+- GitHub [Personal Access Token for the GitHub Container Registry](https://docs.github.com/en/free-pro-team@latest/packages/guides/pushing-and-pulling-docker-images#authenticating-to-github-container-registry).
+- Gitea [Authentication](https://docs.gitea.com/development/api-usage#authentication)
 
 #### Set up your Dockerfile
 
@@ -73,8 +74,9 @@ See [this sample Dockerfile](https://github.com/mcld/buildscript/blob/main/Docke
 
 - Review sample CI configurations:
 
-  - [GitHub Action](https://github.com/mcld/buildscript/blob/main/.github/workflows/build.yml)
   - [Azure Pipeline](https://github.com/mcld/buildscript/blob/main/azure-pipelines.yml)
+  - [GitHub Action](https://github.com/mcld/buildscript/blob/main/.github/workflows/build.yml)
+  - [Gitea Action](https://docs.gitea.com/usage/actions/overview) - Gitea is able to use the GitHub action listed above or a workflow in .gitlab/workflows
 
 - Push some branches and open and resolve some PRs to see if the build works successfully.
 
